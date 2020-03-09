@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- https://fontawesome.com/v4.7.0/icons/ -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <link href="https://cdn.bootcss.com/fullcalendar/4.2.0/core/main.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/fullcalendar/4.2.0/daygrid/main.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/fullcalendar/4.2.0/timegrid/main.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/fullcalendar/4.2.0/list/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id='calendar'></div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.bootcss.com/fullcalendar/4.2.0/core/main.min.js"></script>
+    <script src="https://cdn.bootcss.com/fullcalendar/4.2.0/daygrid/main.min.js"></script>
+    <script src="https://cdn.bootcss.com/fullcalendar/4.2.0/timegrid/main.min.js"></script>
+    <script src="https://cdn.bootcss.com/fullcalendar/4.2.0/list/main.min.js"></script>
+
+    <script>
+        // https://fullcalendar.io/docs/plugin-index
+        var calendar = new FullCalendar.Calendar($('#calendar')[0], {
+            plugins: [ 'dayGrid', 'timeGrid', 'list' ],
+        });
+        calendar.render();
+    </script>
+</body>
+</html>

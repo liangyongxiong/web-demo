@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <p></p>
+    <ul>
+        <li><a href="./">/</a></li>
+        <li><a href="#whoop">#whoop</a></li>
+        <li><a href="./about">/about</a></li>
+        <li><a href="./contact">/contact</a></li>
+        <li><a href="./contact/me">/contact/me</a></li>
+        <li><a href="./not-found?foo=bar">/not-found</a></li>
+    </ul>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/page.js/1.11.5/page.min.js"></script>
+
+    <script>
+        // https://github.com/visionmedia/page.js/tree/master/examples
+
+        page.base('/Users/Michael/Desktop/startup/web-demo/route');
+
+        page('/', index);
+        page('/about', about);
+        page('/contact', contact);
+        page('/contact/:contactName', contact);
+        page.start();
+
+        function index() {
+            document.querySelector('p').textContent = 'viewing index';
+        }
+
+        function about() {
+            document.querySelector('p').textContent = 'viewing about';
+        }
+
+        function contact(ctx) {
+            document.querySelector('p').textContent = 'viewing contact ' + (ctx.params.contactName || '');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- https://fontawesome.com/v4.7.0/icons/ -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <link href="https://cdn.bootcss.com/select2/4.0.12/css/select2.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="m-3">
+        <select class="select2-single form-control" name="state">
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming</option>
+        </select>
+    </div>
+
+    <div class="m-3">
+        <select class="select2-multiple form-control" name="states[]" multiple="multiple">
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming</option>
+        </select>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.bootcss.com/select2/4.0.12/js/select2.min.js"></script>
+
+    <script>
+        // https://select2.org/getting-started/basic-usage
+        $('.select2-single').select2();
+        $('.select2-multiple').select2();
+    </script>
+</body>
+</html>

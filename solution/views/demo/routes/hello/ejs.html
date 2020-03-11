@@ -1,0 +1,28 @@
+<div class="hello-app-1 p-3 bg-danger">
+    <p v-if="seen">现在你看到我了</p>
+    <p>
+        <span v-bind:title="title">{{ message }}</span>
+    </p>
+    <p>
+        <input v-model="message">
+    </p>
+    <p>
+        <button v-on:click="reverseMessage">反转消息</button>
+    </p>
+    <p>
+    <ol>
+        <li v-for="todo in todos">{{ todo.text }}</li>
+    </ol>
+    </p>
+    <p>
+        <span>Ask a yes/no question:</span>
+        <input v-model="question">
+    </p>
+    <p>{{ answer }}</p>
+</div>
+
+<div class="hello-app-2 p-3 bg-success">
+    <p>
+        <span>{{ answer }}</span>
+    </p>
+</div>

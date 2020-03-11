@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        var WEB = {
+            static: {
+                url: 'http://127.0.0.1:8000/'
+            },
+            require: {
+                config: 'http://127.0.0.1:8000/config.js',
+            }
+        };
+    </script>
 </head>
 
 <body>
     <div id="main"></div>
-    <script data-main="main" src="https://cdn.bootcss.com/require.js/2.3.6/require.min.js"></script>
+    <script data-main="views/demo/main" src="https://cdn.bootcss.com/require.js/2.3.6/require.min.js"></script>
 </body>
 </html>

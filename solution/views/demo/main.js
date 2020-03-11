@@ -4,12 +4,12 @@ require([WEB.require.config], function(config) {
         domReady(function() {
             var router = Router();
             router.on('/hello', function() {
-                require(['views/demo/routes/hello/app'], function(module) {
+                require(['views/demo/routes/hello/script'], function(module) {
                     module();
                 });
             });
             router.on('/user/:user', function(user) {
-                require(['views/demo/routes/user/app'], function(module) {
+                require(['views/demo/routes/user/script'], function(module) {
                     module(user);
                 });
             });

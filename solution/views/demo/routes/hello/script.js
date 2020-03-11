@@ -4,8 +4,10 @@ define(function(require) {
     Vuex = require('vuex');
     Vue.use(Vuex);
 
+    VueRouter = require('vue-router');
+
     return function() {
-        $('#main').html(require('text!/views/demo/routes/hello/ejs.html'));
+        $('#main').html(require('text!/views/demo/routes/hello/template.html'));
 
         var store = new Vuex.Store({
             state: {

@@ -10,9 +10,10 @@ define(function(require) {
             'bootstrap': 'https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min',
             'ejs': 'https://npmcdn.com/ejs@3.0.1/ejs.min',
             'director': 'https://cdn.bootcss.com/Director/1.2.8/director.min',
+            'axios': 'https://cdn.bootcss.com/axios/0.19.2/axios.min',
             'vue': 'https://cdn.bootcss.com/vue/2.6.11/vue.min',
             'vuex': 'https://cdn.bootcss.com/vuex/3.1.2/vuex.min',
-            'axios': 'https://cdn.bootcss.com/axios/0.19.2/axios.min',
+            'vue-router': 'https://cdn.bootcss.com/vue-router/3.1.3/vue-router.min',
         },
         shim: {
             'bootstrap': {

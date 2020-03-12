@@ -1,6 +1,6 @@
 define(function(require) {
     return {
-        baseUrl: WEB.static.url,
+        baseUrl: WEB.static.base,
         waitSeconds: 0,
         paths: {
             'domReady': 'https://cdn.bootcss.com/require-domReady/2.0.1/domReady.min',

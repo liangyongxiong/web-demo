@@ -2,7 +2,7 @@ require([WEB.require.config], function(config) {
     require.config(config);
     require(['domReady', 'bootstrap', 'director'], function(domReady) {
         domReady(function() {
-            var router = Router();
+            var router = new Router();
             router.on('/hello', function() {
                 require(['views/demo/routes/hello/script'], function(module) {
                     module();
